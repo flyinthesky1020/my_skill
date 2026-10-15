@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run E2E Benchmark"
+  short_description: "通过隔离 E2E 流程批量评测 Office benchmark"
+  default_prompt: "Use $run-e2e-benchmark to evaluate this validated benchmark plan through the configured E2E endpoint."

@@ -1,0 +1,44 @@
+{
+  "timezone": "Asia/Shanghai",
+  "lark_cli_home": "/path/to/service/.lark-cli-home",
+  "app": {
+    "app_id": "cli_xxx",
+    "app_secret_file": "/secure/path/app_secret.txt"
+  },
+  "chats": [
+    {
+      "name": "测试",
+      "chat_id": "oc_xxx",
+      "enabled": true
+    }
+  ],
+  "base": {
+    "token": "base_token",
+    "topic_table_id": "tbl_xxx",
+    "topic_grid_view_id": "vew_xxx",
+    "collection_form_url": "https://example.feishu.cn/share/base/form/xxx",
+    "result_table_id": "tbl_result",
+    "public_doc_token": "docx_token"
+  },
+  "poll": {
+    "top_n": 3,
+    "max_options": 10,
+    "dedupe": "latest_vote_per_user"
+  },
+  "voter_names": {
+    "ou_xxx": "张三"
+  },
+  "schedule": {
+    "monday_collect_reminder": { "weekday": "MO", "time": "10:00" },
+    "tuesday_missing_check": { "weekday": "TU", "time": "10:00" },
+    "wednesday_start_poll": { "weekday": "WE", "time": "10:00" },
+    "thursday_publish_result": { "weekday": "TH", "time": "18:00" }
+  },
+  "copy": {
+    "monday_collect_reminder": "【选题收集提醒】\\n请大家填写本周选题收集表：\\n{form_url}",
+    "tuesday_all_done": "【选题收集检查】\\n本周选题收集已完成，所有群成员都检测到提交记录。",
+    "tuesday_missing_check": "【选题收集检查】\\n以下同学暂未检测到本周选题提交，请补充填写：\\n{mentions}\\n\\n填写入口：\\n{form_url}",
+    "wednesday_start_poll": "【本周选题投票】\\n请选择你支持的本周选题。点击后会写入多维表格。统计时同一投票人只保留最新一次选择。",
+    "thursday_publish_result": "【投票结果公示】\\n{summary}\\n\\n文字版结果已同步到 Base 内云文档。"
+  }
+}
